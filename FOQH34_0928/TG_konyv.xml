@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE könyvtár SYSTEM "TG_konyv.dtd">
+
+<könyvtár>
+    <könyv id="inform-ism-1">
+        <cím cim="informatikai ismeretek 1"/>
+        <kiadásEve ev="2030"/>
+        <kiado kiado="infos leszek"/>
+        <szerző szerzo="Kiss József"/>
+    </könyv>
+
+    <könyv id="inform-ism-2">
+        <cím cim="informatikai ismeretek 3"/>
+        <kiadásEve ev="2031"/>
+        <kiado kiado="infos leszek"/>
+        <szerző szerzo="Kiss József"/>
+    </könyv>
+
+    <könyv id="inform-ism-3">
+        <cím cim="informatikai ismeretek 2"/>
+        <kiadásEve ev="2032"/>
+        <kiado kiado="infos leszek"/>
+        <szerző szerzo="Kiss József"/>
+    </könyv>
+
+</könyvtár>

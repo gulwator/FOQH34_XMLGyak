@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT könyvtár (könyv)>
+<!ELEMENT könyv (cím,kiadásEve,kiado,szerző)>
+<!ELEMENT cím (#PCDATA)>
+<!ELEMENT kiadásEve (#PCDATA)>
+<!ELEMENT kiado (#PCDATA)>
+<!ELEMENT szerző (#PCDATA)>
+
+<!ATTLIST könyv id ID #REQUIRED>
