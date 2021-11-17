@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8">
+
+<konferencia>
+    <cím id="esemény_02">FocusWeekend</cím>
+    <hallgatók>
+        <hallgató id="hallgato_02" >
+            <név>Toth_Gergő</név>
+            <lakcím> Hegyalja út 15</lakcím>
+        </hallgató>
+    </hallgatók>
+    <előadó id="eloado_3">
+        <név>Kiss Pál</név>
+        <adószám>1341256865</adószám>
+        <lakcím> Borsod utca 23</lakcím>
+    </előadó>
+    <dátum> 2021.09.18</dátum>
+</konferencia>    

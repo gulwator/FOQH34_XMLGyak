@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8">
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex"/>
+        <szinesz id="u5q_4xm_2jb" nev="Madison_Ivy"=>
+        <iro id="trv_4xm_2jb"/>
+        <producer id="minta_id_1" nev="Kitlalt_Szemely_1" />
+        <dramaturg id="minta_id_2" nev="Kitlalt_Szemely_2" />
+        <oeratőr id="minta_id_3" nev="Kitlalt_Szemely_3"/>
+    </film>
+</mozi>

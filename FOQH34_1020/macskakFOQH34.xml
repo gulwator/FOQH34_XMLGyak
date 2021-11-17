@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE macskak  SYSTEM "macskakFOQH34.dtd">
+
+<macskak>
+	<macska id="elso">
+		<nev>Hiszti</nev>
+		<kor>5</kor>
+		<fajta>Házi</fajta>
+	</macska>
+	
+	<macska id="masodik">
+		<nev>Leo</nev>
+		<kor>2</kor>
+		<fajta>Bengali</fajta>
+	</macska>
+	
+	<macska id="harmadik">
+		<nev>Pamacs</nev>
+		<kor>5</kor>
+		<fajta>Házi</fajta>
+	</macska>
+</macskak>

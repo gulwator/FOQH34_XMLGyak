@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+	<user id="1">
+		<firstname>Gergő</firstname>
+		<lastname>Tóth</lastname>
+		<profession>Student</profession>
+	</user>
+	<user id="2">
+		<firstname>Béla</firstname>
+		<lastname>Kiss</lastname>
+		<profession>Mechanic</profession>
+		</user>
+	<user id="3">
+		<firstname>Bianka</firstname>
+		<lastname>Kovács</lastname>
+		<profession>Healthcare assistant</profession>
+	</user>
+</users>

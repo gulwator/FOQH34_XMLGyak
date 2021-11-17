@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/macskakFOQH34" elementFormDefault="qualified">
+	<xs:simpleType name="nev">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="kor">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="fajta">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	
+ 	<xs:complexType name="macskaTipus">
+ 		<xs:sequence>
+ 			<xs:element name="nev" type="nev"/>
+ 			<xs:element name="kor" type="kor"/>
+ 			<xs:element name="fajta" type="fajta"/>
+ 		</xs:sequence>
+ 	</xs:complexType>
+ 	
+ 	<xs:element name="macskak">
+		<xs:complexType>
+			  <xs:sequence>
+			    <xs:element name="macska" type="macskaTipus"/>
+			  </xs:sequence>
+		</xs:complexType>
+	  </xs:element>
+</xs:schema>
