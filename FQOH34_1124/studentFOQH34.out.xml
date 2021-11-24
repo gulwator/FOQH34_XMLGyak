@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <h2>Hallgatok apply-template</h2>
+        <p>
+              Vezeteknev: <span style="color:#00ff00">Toth</span>
+            <br>
+              Keresztnev: <span style="color:#ff00c8">Gergo</span>
+            <br>
+            Totya Kor: 
+<span style="color:#0000ff">23</span>
+            <br>
+              Fizetes: <span style="color:#ff0000">600000</span>
+            <br>
+        </p>
+        <p>
+              Vezeteknev: <span style="color:#00ff00">Kiss</span>
+            <br>
+              Keresztnev: <span style="color:#ff00c8">Bela</span>
+            <br>
+            Belus Kor: 
+<span style="color:#0000ff">32</span>
+            <br>
+              Fizetes: <span style="color:#ff0000">600000</span>
+            <br>
+        </p>
+        <p>
+              Vezeteknev: <span style="color:#00ff00">Kovacs</span>
+            <br>
+              Keresztnev: <span style="color:#ff00c8">Jozsef</span>
+            <br>
+            Jozika Kor: 
+<span style="color:#0000ff">43</span>
+            <br>
+              Fizetes: <span style="color:#ff0000">600000</span>
+            <br>
+        </p>
+    </body>
+</html>

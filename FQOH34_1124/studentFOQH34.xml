@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type = " text/xs1" href = "studentFOQH34 apply.xsl"?>
+
+<class>
+	<student id="01">
+		<vezeteknev>Toth</vezeteknev>
+		<keresztnev>Gergo</keresztnev>
+		<becenev>Totya</becenev>
+		<kor>23</kor>
+		<fizetes>600000</fizetes>
+	</student>
+	
+	<student id="02">
+		<vezeteknev>Kiss</vezeteknev>
+		<keresztnev>Bela</keresztnev>
+		<becenev>Belus</becenev>
+		<kor>32</kor>
+		<fizetes>600000</fizetes>
+	</student>
+	
+	<student id="03">
+		<vezeteknev>Kovacs</vezeteknev>
+		<keresztnev>Jozsef</keresztnev>
+		<becenev>Jozika</becenev>
+		<kor>43</kor>
+		<fizetes>600000</fizetes>
+	</student>
+</class>
