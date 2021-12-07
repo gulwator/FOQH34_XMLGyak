@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<adatbazis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaFOQH34.xsd">
+    	
+  
+  <vasarlo id="V12">
+        		
+    
+    <lakcim>
+            			
+      
+      <iranyitoSzam>3535</iranyitoSzam>
+            			
+      
+      <varos>Miskolc</varos>
+            			
+      
+      <utca>Hegyalja utca</utca>
+            			
+      
+      <hazszam>15</hazszam>
+            		
+    
+    </lakcim>
+        		
+    
+    <nev>Kertesz Laszlo</nev>
+        	
+  
+  </vasarlo>
+    	
+  
+  <vasarlo id="V13">
+        		
+    
+    <lakcim>
+            			
+      
+      <iranyitoSzam>3516</iranyitoSzam>
+            			
+      
+      <varos>Miskolc</varos>
+            			
+      
+      <utca>Csermak Antal utca</utca>
+            			
+      
+      <hazszam>41</hazszam>
+            		
+    
+    </lakcim>
+        		
+    
+    <nev>Toth Levente</nev>
+        	
+  
+  </vasarlo>
+    	
+  
+  <termek id="T01">
+        		
+    
+    <szarmazasiOrszag>Hollandia</szarmazasiOrszag>
+        		
+    
+    <latinNev>Rosa</latinNev>
+        		
+    
+    <ar>850</ar>
+        		
+    
+    <aruMegnevezes>Voros rozsa</aruMegnevezes>
+        	
+  
+  </termek>
+    	
+  
+  <termek id="T02">
+        		
+    
+    <szarmazasiOrszag>Magyar</szarmazasiOrszag>
+        		
+    
+    <latinNev>-</latinNev>
+        		
+    
+    <ar>1200</ar>
+        		
+    
+    <aruMegnevezes>illat gyertya</aruMegnevezes>
+        	
+  
+  </termek>
+    	
+	
+  
+  <vasarlas id="S01">
+        		
+    
+    <vid>12</vid>
+        		
+    		
+    
+    <darab>10</darab>
+        		
+    
+    <tKod>01</tKod>
+        		
+    
+    <idopont>2022-12-05</idopont>
+        	
+  
+  </vasarlas>
+    
+
+</adatbazis>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/XMLSchemaFOQH34" elementFormDefault="qualified">
+	<xs:element name="adatbazis">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="vasarlo" type="vasarloTipus" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="termek" type="termekTipus" maxOccurs="unbounded"/>
+				<xs:element name="vasarlas" type="vasarlasTipus" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:key name="vasarloKulcs">
+		<xs:selector xpath="vasarlo"/>
+		<xs:field xpath="@id" />
+		</xs:key>
+		<xs:key name="termekKulcs">
+		<xs:selector xpath="termek"/>
+		<xs:field xpath="@id" />
+		</xs:key>
+		<xs:key name="vasarlasKulcs">
+		<xs:selector xpath="vasarlas"/>
+		<xs:field xpath="@id" />
+		</xs:key>
+	</xs:element>
+	<xs:complexType name="vasarloTipus">
+		<xs:sequence>		
+			<xs:element name="lakcim" type="lakcimTipus" />
+			<xs:element name="nev" type="nev"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="lakcimTipus">
+		<xs:sequence>
+			<xs:element name="iranyitoSzam" type="iranyitoSzam"/>
+			<xs:element name="varos" type="varos"/>
+			<xs:element name="utca" type="utca"/>
+			<xs:element name="hazszam" type="hazszam"/>
+		</xs:sequence>
+	</xs:complexType> 
+	
+	<xs:simpleType name="iranyitoSzam">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="varos">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="utca">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="hazszam">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="nev">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	
+	<xs:complexType name="termekTipus">
+		<xs:sequence>
+			<xs:element name="szarmazasiOrszag" type="xs:string"/>
+			<xs:element name="latinNev" type="xs:string"/>
+			<xs:element name="ar" type="xs:positiveInteger"/>
+			<xs:element name="aruMegnevezes" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="vasarlasTipus">
+		<xs:sequence>
+			<xs:element name="vid" type="xs:positiveInteger"/>
+			<xs:element name="darab" type="xs:string"/>
+			<xs:element name="tKod" type="xs:positiveInteger"/>
+			<xs:element name="idopont" type="xs:date"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
+</xs:schema>
