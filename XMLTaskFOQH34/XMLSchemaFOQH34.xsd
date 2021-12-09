@@ -6,11 +6,16 @@
 				<xs:element name="vasarlo" type="vasarloTipus" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element name="termek" type="termekTipus" maxOccurs="unbounded"/>
 				<xs:element name="vasarlas" type="vasarlasTipus" maxOccurs="unbounded"/>
+				<xs:element name="tkartya" type="tkartyaTipus" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
 		
 		<xs:key name="vasarloKulcs">
 		<xs:selector xpath="vasarlo"/>
+		<xs:field xpath="@id" />
+		</xs:key>
+		<xs:key name="tkartyaKulcs">
+		<xs:selector xpath="tkartya"/>
 		<xs:field xpath="@id" />
 		</xs:key>
 		<xs:key name="termekKulcs">
@@ -21,6 +26,19 @@
 		<xs:selector xpath="vasarlas"/>
 		<xs:field xpath="@id" />
 		</xs:key>
+		
+		<xs:keyref name="vasarlas-termek" refer="termekKulcs">
+		<xs:selector xpath="vasarlas/tKod"/>
+		<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="vasarlas-vasarlo" refer="vasarloKulcs">
+		<xs:selector xpath="vasarlas/vid"/>
+		<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="vasarlo-tkartya" refer="tkartyaKulcs">
+		<xs:selector xpath="vasarlo/tkartyaid"/>
+		<xs:field xpath="."/>
+		</xs:keyref>
 	</xs:element>
 	<xs:complexType name="vasarloTipus">
 		<xs:sequence>		
@@ -68,12 +86,18 @@
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:ID" use="required" />
 	</xs:complexType>
-	
+	<xs:complexType name="tkartyaTipus">
+		<xs:sequence>
+			<xs:element name="szint" type="xs:string"/>
+			<xs:element name="kedvezmeny" type="xs:positiveInteger"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
 	<xs:complexType name="vasarlasTipus">
 		<xs:sequence>
-			<xs:element name="vid" type="xs:positiveInteger"/>
+			<xs:element name="vid" type="xs:string"/>
 			<xs:element name="darab" type="xs:string"/>
-			<xs:element name="tKod" type="xs:positiveInteger"/>
+			<xs:element name="tKod" type="xs:string"/>
 			<xs:element name="idopont" type="xs:date"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:ID" use="required" />
